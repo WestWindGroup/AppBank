@@ -1,0 +1,111 @@
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xmlns="http://www.springframework.org/schema/beans"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <context:component-scan base-package="ua.artemenko.bankapp"/>
+
+
+    <bean id="menuWorkScreen" class="ua.artemenko.bankapp.view.WorkScreen" init-method="initWorkScreen">
+        <constructor-arg name="head">
+            <bean class="ua.artemenko.bankapp.view.Head" p:key="menu"/>
+        </constructor-arg>
+        <constructor-arg name="menuItem">
+            <list>
+                <bean class="ua.artemenko.bankapp.view.MenuItem" p:numItem="1" p:key="new_credit"/>
+                <bean class="ua.artemenko.bankapp.view.MenuItem" p:numItem="2" p:key="payment_loan"/>
+                <bean class="ua.artemenko.bankapp.view.MenuItem" p:numItem="3" p:key="language_selection"/>
+                <bean class="ua.artemenko.bankapp.view.MenuItem" p:numItem="4" p:key="exit"/>
+            </list>
+        </constructor-arg>
+        <constructor-arg name="messageSource" ref="messageSource"/>
+        <property name="locale" ref="locale"/>
+    </bean>
+
+    <bean id="newCreditWorkScreen" class="ua.artemenko.bankapp.view.WorkScreen" init-method="initWorkScreen">
+        <constructor-arg name="head">
+            <bean class="ua.artemenko.bankapp.view.Head" p:key="new_credit"/>
+        </constructor-arg>
+        <constructor-arg name="requestList">
+            <list value-type="java.util.ArrayList">
+                <bean class="ua.artemenko.bankapp.view.Request" p:key="input_sum" p:maxValue="100000"/>
+                <bean class="ua.artemenko.bankapp.view.Request" p:key="input_number_month" p:maxValue="60"/>
+                <bean class="ua.artemenko.bankapp.view.Request" p:key="input_type" p:maxValue="2"/>
+            </list>
+        </constructor-arg>
+        <constructor-arg name="menuItem">
+            <list value-type="java.util.ArrayList">
+                <bean class="ua.artemenko.bankapp.view.MenuItem" p:numItem="1" p:key="create"/>
+                <bean class="ua.artemenko.bankapp.view.MenuItem" p:numItem="2" p:key="exit"/>
+            </list>
+        </constructor-arg>
+        <constructor-arg name="messageSource" ref="messageSource"/>
+        <property name="locale" ref="locale"/>
+    </bean>
+
+    <bean id="paymentsWorkScreen" class="ua.artemenko.bankapp.view.WorkScreen" init-method="initWorkScreen">
+        <constructor-arg name="head">
+            <bean class="ua.artemenko.bankapp.view.Head" p:key="payment_loan"/>
+        </constructor-arg>
+        <constructor-arg name="requestList">
+            <list>
+                <bean class="ua.artemenko.bankapp.view.Request" p:key="input_id"/>
+                <bean class="ua.artemenko.bankapp.view.Request" p:key="inter_sum_payment"/>
+            </list>
+        </constructor-arg>
+        <constructor-arg name="menuItem">
+            <list value-type="java.util.ArrayList">
+                <bean class="ua.artemenko.bankapp.view.MenuItem" p:numItem="1" p:key="pay"/>
+                <bean class="ua.artemenko.bankapp.view.MenuItem" p:numItem="2" p:key="exit"/>
+            </list>
+        </constructor-arg>
+        <constructor-arg name="messageSource" ref="messageSource"/>
+        <property name="locale" ref="locale"/>
+    </bean>
+
+    <bean id="languageScreen" class="ua.artemenko.bankapp.view.WorkScreen" init-method="initWorkScreen">
+        <constructor-arg name="head">
+            <bean class="ua.artemenko.bankapp.view.Head" p:key="language_selection"/>
+        </constructor-arg>
+        <constructor-arg name="requestList">
+            <list>
+            </list>
+        </constructor-arg>
+        <constructor-arg name="menuItem">
+            <list>
+                <bean class="ua.artemenko.bankapp.view.MenuItem" p:numItem="1" p:key="input_English"/>
+                <bean class="ua.artemenko.bankapp.view.MenuItem" p:numItem="2" p:key="input_Russian"/>
+                <bean class="ua.artemenko.bankapp.view.MenuItem" p:numItem="3" p:key="input_Ukrainian"/>
+                <bean class="ua.artemenko.bankapp.view.MenuItem" p:numItem="4" p:key="exit"/>
+            </list>
+        </constructor-arg>
+        <constructor-arg name="messageSource" ref="messageSource"/>
+        <property name="locale" ref="locale"/>
+    </bean>
+
+    <bean id="messages" class="ua.artemenko.bankapp.view.Messages" p:exit="exit" p:menu="menu"
+          p:incorrect_input="incorrect_input"
+          p:incorrect_input_language="incorrect_input_language" p:language_selection="language_selection"
+          p:create="create" p:payment_loan="payment_loan" p:credits_null="credits_null" p:new_credit="new_credit"
+          p:min_payment="min_payment" p:input_English="input_English" p:input_Russian="input_Russian"
+          p:input_Ukrainian="input_Ukrainian"
+          p:input_id="input_id" p:input_number_month="input_number_month" p:input_sum="input_sum"
+          p:input_type="input_type"
+          p:inter_sum_payment="inter_sum_payment" p:pay="pay" p:messageSource-ref="messageSource" p:locale-ref="locale"/>
+
+    <bean id="locale" class="java.util.Locale">
+        <constructor-arg name="language" value="uk"/>
+    </bean>
+
+    <bean id="request" class="ua.artemenko.bankapp.view.Request" scope="prototype"/>
+
+    <bean id="inputScreen" class="ua.artemenko.bankapp.service.InputScreen" scope="prototype"
+          init-method="initInputScreen">
+    </bean>
+
+
+</beans>
