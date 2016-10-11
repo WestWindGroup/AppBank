@@ -46,6 +46,7 @@ public class MenuItem{
         MenuItem menuItem = (MenuItem) o;
 
         if (numItem != menuItem.numItem) return false;
+        if (key != null ? !key.equals(menuItem.key) : menuItem.key != null) return false;
         return item != null ? item.equals(menuItem.item) : menuItem.item == null;
 
     }
@@ -53,6 +54,7 @@ public class MenuItem{
     @Override
     public int hashCode() {
         int result = numItem;
+        result = 31 * result + (key != null ? key.hashCode() : 0);
         result = 31 * result + (item != null ? item.hashCode() : 0);
         return result;
     }

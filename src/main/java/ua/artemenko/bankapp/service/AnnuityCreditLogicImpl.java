@@ -4,12 +4,9 @@ package ua.artemenko.bankapp.service;
 import ua.artemenko.bankapp.model.Credit;
 
 import java.math.BigDecimal;
-import java.text.SimpleDateFormat;
 import java.util.*;
 
-public class AnnuityCreditLogicImp extends CreditLogic {
-
-
+public class AnnuityCreditLogicImpl extends CreditLogic {
 
     @Override
     public List<String> calculateListPayments(Credit credit) {
@@ -37,7 +34,8 @@ public class AnnuityCreditLogicImp extends CreditLogic {
     @Override
     public BigDecimal calculateMinPayment(Credit credit) {
         int percentMax = 100;
-        BigDecimal rate = new BigDecimal(String.valueOf(credit.getInterestRate() / percentMax)).setScale(5, BigDecimal.ROUND_HALF_EVEN);
+        BigDecimal rate = new BigDecimal(String.valueOf(credit.getInterestRate() / percentMax)).
+                setScale(5, BigDecimal.ROUND_HALF_EVEN);
         BigDecimal factor = factorСompute(rate, credit.getDurationOfContract());
 
         return paymentMonth(factor, credit.getSumOfIndebtedness()).setScale(2, BigDecimal.ROUND_HALF_EVEN);
@@ -83,14 +81,4 @@ public class AnnuityCreditLogicImp extends CreditLogic {
         return up.divide(down, BigDecimal.ROUND_HALF_EVEN).setScale(2, BigDecimal.ROUND_HALF_EVEN);
     }
 
-    private String formatString(BigDecimal ratePay, BigDecimal bodyPay, BigDecimal payment) {
-        String curStringDate = new SimpleDateFormat("MM.yyyy").format(calendar.getTime());
-        return String.format("| %7s |  %15s  |  %15s  |  %15s  |",
-                            curStringDate, ratePay, bodyPay, payment);
-    }
-
-    private String formatStringFirst() {
-
-        return String.format("| %7s |  %15s  |  %15s  |  %15s  |", "Data", "RatePay", "BodyPay", "Payment");
-    }
 }

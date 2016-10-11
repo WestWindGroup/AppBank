@@ -47,13 +47,18 @@ public class Request {
 
         Request request1 = (Request) o;
 
+        if (maxValue != request1.maxValue) return false;
+        if (key != null ? !key.equals(request1.key) : request1.key != null) return false;
         return request != null ? request.equals(request1.request) : request1.request == null;
 
     }
 
     @Override
     public int hashCode() {
-        return request != null ? request.hashCode() : 0;
+        int result = key != null ? key.hashCode() : 0;
+        result = 31 * result + (request != null ? request.hashCode() : 0);
+        result = 31 * result + maxValue;
+        return result;
     }
 
     @Override

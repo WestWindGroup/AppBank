@@ -1,8 +1,8 @@
 package ua.artemenko.bankapp.controller;
 
 import ua.artemenko.bankapp.model.Credit;
-import ua.artemenko.bankapp.model.CreditCreator;
-import ua.artemenko.bankapp.service.CreditServiceImp;
+import ua.artemenko.bankapp.model.CreditFactory;
+import ua.artemenko.bankapp.service.CreditServiceImpl;
 import ua.artemenko.bankapp.service.InputScreen;
 import ua.artemenko.bankapp.view.MenuItem;
 import ua.artemenko.bankapp.view.Messages;
@@ -17,11 +17,11 @@ public class NewCreditScreenController implements ScreenController {
     private Observer observer;
     private Messages messages;
     private InputScreen inputScreen;
-    private CreditServiceImp serviceImp;
+    private CreditServiceImpl serviceImp;
     private WorkScreen workScreen;
     private List<Credit> creditList;
     private Credit credit;
-    private CreditCreator creditCreator;
+    private CreditFactory creditCreator;
     private String nameScreenForExit;
 
     @Override
@@ -209,11 +209,11 @@ public class NewCreditScreenController implements ScreenController {
         this.inputScreen = inputScreen;
     }
 
-    public CreditServiceImp getServiceImp() {
+    public CreditServiceImpl getServiceImp() {
         return serviceImp;
     }
 
-    public void setServiceImp(CreditServiceImp serviceImp) {
+    public void setServiceImp(CreditServiceImpl serviceImp) {
         this.serviceImp = serviceImp;
     }
 
@@ -241,11 +241,11 @@ public class NewCreditScreenController implements ScreenController {
         this.credit = credit;
     }
 
-    public CreditCreator getCreditCreator() {
+    public CreditFactory getCreditCreator() {
         return creditCreator;
     }
 
-    public void setCreditCreator(CreditCreator creditCreator) {
+    public void setCreditCreator(CreditFactory creditCreator) {
         this.creditCreator = creditCreator;
     }
 

@@ -1,8 +1,8 @@
 package ua.artemenko.bankapp.model;
 
 
-import ua.artemenko.bankapp.service.AnnuityCreditLogicImp;
-import ua.artemenko.bankapp.service.BalanceDecreaseCreditLogicImp;
+import ua.artemenko.bankapp.service.AnnuityCreditLogicImpl;
+import ua.artemenko.bankapp.service.BalanceDecreaseCreditLogicImpl;
 import ua.artemenko.bankapp.service.CreditLogic;
 
 import java.math.BigDecimal;
@@ -86,9 +86,9 @@ public class Credit {
     public void setTypePayment(int typePayment) {
         this.typePayment = typePayment;
         if (typePayment == 1) {
-            creditLogic = new AnnuityCreditLogicImp();
+            creditLogic = new AnnuityCreditLogicImpl();
         } else if (typePayment == 2) {
-            creditLogic = new BalanceDecreaseCreditLogicImp();
+            creditLogic = new BalanceDecreaseCreditLogicImpl();
         }
     }
 

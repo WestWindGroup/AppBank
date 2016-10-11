@@ -6,7 +6,7 @@ import ua.artemenko.bankapp.model.Credit;
 import java.util.List;
 
 
-public class CreditServiceImp implements CreditService {
+public class CreditServiceImpl implements CreditService {
     private CreditDao creditDao;
 
     public void setCreditDao(CreditDao creditDao) {

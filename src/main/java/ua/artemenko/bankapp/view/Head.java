@@ -36,13 +36,16 @@ public class Head{
 
         Head head1 = (Head) o;
 
+        if (key != null ? !key.equals(head1.key) : head1.key != null) return false;
         return head != null ? head.equals(head1.head) : head1.head == null;
 
     }
 
     @Override
     public int hashCode() {
-        return head != null ? head.hashCode() : 0;
+        int result = key != null ? key.hashCode() : 0;
+        result = 31 * result + (head != null ? head.hashCode() : 0);
+        return result;
     }
 
     @Override

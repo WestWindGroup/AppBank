@@ -15,11 +15,11 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.List;
 
-public class CreditDaoImp implements CreditDao {
+public class CreditDaoImpl implements CreditDao {
 
     private NamedParameterJdbcTemplate jdbcTemplate;
     private DataSource dataSource;
-    private static final Logger logger = LoggerFactory.getLogger(CreditDaoImp.class);
+    private static final Logger logger = LoggerFactory.getLogger(CreditDaoImpl.class);
 
 
     @Override

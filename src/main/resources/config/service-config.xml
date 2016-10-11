@@ -10,7 +10,7 @@
     <context:component-scan base-package="ua.artemenko.bankapp"/>
 
 
-    <bean id="creditService" class="ua.artemenko.bankapp.service.CreditServiceImp">
+    <bean id="creditService" class="ua.artemenko.bankapp.service.CreditServiceImpl">
         <property name="creditDao" ref="creditDao"/>
     </bean>
 

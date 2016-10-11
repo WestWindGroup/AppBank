@@ -71,19 +71,6 @@ public class MenuScreenController implements ScreenController {
     }
 
 
-    private void showListCredit(List<Credit> list) {
-        String headlines = String.format("|  %15s  |  %20s  |  %20s  |  %15s  |  %15s  |  %15s  |",
-                "id contract", "amount of credit", "sum of indebtedness",
-                "duration of contract", "type payment", "interestRate");
-        System.out.println(headlines);
-        for (int i = 0; i < list.size(); i++) {
-            System.out.println(list.get(i));
-        }
-    }
-
-
-
-
     @Override
     public void alertObserver(String nameScreen) {
         observer.handleEvent(nameScreen);

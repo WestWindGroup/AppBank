@@ -2,7 +2,7 @@ package ua.artemenko.bankapp.controller;
 
 import org.springframework.dao.DataAccessException;
 import ua.artemenko.bankapp.model.Credit;
-import ua.artemenko.bankapp.service.CreditServiceImp;
+import ua.artemenko.bankapp.service.CreditServiceImpl;
 import ua.artemenko.bankapp.service.InputScreen;
 import ua.artemenko.bankapp.view.MenuItem;
 import ua.artemenko.bankapp.view.Messages;
@@ -15,7 +15,7 @@ public class PaymentLoanScreenController implements ScreenController {
     private Observer observer;
     private Messages messages;
     private InputScreen inputScreen;
-    private CreditServiceImp serviceImp;
+    private CreditServiceImpl serviceImp;
     private WorkScreen workScreen;
     private Credit credit;
     private String nameScreenForExit;
@@ -179,11 +179,11 @@ public class PaymentLoanScreenController implements ScreenController {
         this.inputScreen = inputScreen;
     }
 
-    public CreditServiceImp getServiceImp() {
+    public CreditServiceImpl getServiceImp() {
         return serviceImp;
     }
 
-    public void setServiceImp(CreditServiceImp serviceImp) {
+    public void setServiceImp(CreditServiceImpl serviceImp) {
         this.serviceImp = serviceImp;
     }
 

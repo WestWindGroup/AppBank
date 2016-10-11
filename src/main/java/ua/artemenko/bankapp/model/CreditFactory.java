@@ -1,6 +1,6 @@
 package ua.artemenko.bankapp.model;
 
 
-public abstract class CreditCreator {
+public abstract class CreditFactory {
     public abstract Credit createCredit();
 }

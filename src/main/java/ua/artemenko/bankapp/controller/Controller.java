@@ -38,14 +38,12 @@ public class Controller implements Observer {
         viewController.startWorkScreen(nameScreen);
     }
 
-
     @Override
     public void handleEvent(String nameScreen) {
         if(!nameScreen.equals(messages.getExit())){
             startScreen(nameScreen);
         }
     }
-
 
     @Override
     public void handChangeLanguage() {
