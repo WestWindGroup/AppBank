@@ -58,8 +58,11 @@ public class PaymentLoanScreenController implements ScreenController {
 
     private void serviceInputSumPayment() {
         BigDecimal minPayment = credit.getCreditLogic().calculateMinPayment(credit);
-        BigDecimal payment = inputInRequest(minPayment,credit.getSumOfIndebtedness());
         BigDecimal rateInPayment = credit.getCreditLogic().returnRatePaymentOfCredit(credit);
+        BigDecimal maxPayment = credit.getSumOfIndebtedness().add(rateInPayment).setScale(2,BigDecimal.ROUND_HALF_UP);
+        messages.printString(messages.getTo(),minPayment,maxPayment);
+        BigDecimal payment = inputInRequest(minPayment,credit.getSumOfIndebtedness());
+
         BigDecimal bodyPayment = payment.subtract(rateInPayment);
         credit.setSumOfIndebtedness(credit.getSumOfIndebtedness().subtract(bodyPayment));
     }
@@ -85,13 +88,12 @@ public class PaymentLoanScreenController implements ScreenController {
         BigDecimal inputNum = new BigDecimal(0);
         while (!endWork) {
             try {
-                inputNum = inputScreen.inputBigDecimal();
+                inputNum = inputScreen.inputString();
                 if (checkInput(inputNum,min, max)) {
                     endWork = true;
                 }
             } catch (InputMismatchException e) {
                 messages.printString(messages.getIncorrect_input());
-                inputScreen.next();
             }
         }
         return inputNum;
@@ -105,6 +107,7 @@ public class PaymentLoanScreenController implements ScreenController {
                 inputNum = inputScreen.inputInt();
                 if (checkInput(inputNum,Integer.MAX_VALUE)) {
                     endWork = true;
+                    inputScreen.next();
                 }
             } catch (InputMismatchException e) {
                 messages.printString(messages.getIncorrect_input());

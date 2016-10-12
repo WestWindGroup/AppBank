@@ -41,6 +41,7 @@ public class NewCreditScreenController implements ScreenController {
     private void inputSumHandler() {
         credit = creditCreator.createCredit();
         int max = maxInRequest(messages.getInput_sum());
+        messages.printString(messages.getTo(),0,max);
         BigDecimal sum = inputInRequest(max).
                 setScale(2, BigDecimal.ROUND_HALF_EVEN);
         credit.setAmountOfCredit(sum);
@@ -49,6 +50,7 @@ public class NewCreditScreenController implements ScreenController {
 
     private void inputNumberMonthHandler() {
         int max = maxInRequest(messages.getInput_number_month());
+        messages.printString(messages.getTo(),0,max);
         int count = inputInt(max);
         credit.setDurationOfContract(count);
     }
@@ -70,6 +72,8 @@ public class NewCreditScreenController implements ScreenController {
 
     private void createCredit() {
         int id = serviceImp.addCredit(credit);
+        messages.printString(messages.getYour_id());
+        System.out.println("№" + id);
         List<String> paymentList =
                 credit.getCreditLogic().calculateListPayments(credit);
         showPayments(paymentList);

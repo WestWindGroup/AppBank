@@ -1,0 +1,305 @@
+21:21:32,212  INFO ClassPathXmlApplicationContext:581 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@ee7d9f1: startup date [Wed Oct 12 21:21:32 EEST 2016]; root of context hierarchy
+21:21:32,292  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [config/app-config.xml]
+21:21:32,966  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [config/controller-config.xml]
+21:21:33,038  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [config/view-config.xml]
+21:21:33,131  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [config/model-config.xml]
+21:21:33,196  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [config/dao-config.xml]
+21:21:33,265  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [config/service-config.xml]
+21:23:37,463  INFO CreditDaoImpl:38 - A new entry is added to the database.Loan information: idContract=0, amountOfCredit=5.00, sumOfIndebtedness=5.00, durationOfContract=12, typePayment=1, interestRate=40.0, creditLogic=ua.artemenko.bankapp.service.AnnuityCreditLogicImpl@3cebbb30
+21:24:16,976  INFO CreditDaoImpl:50 - Entry obtained.Information: idContract=31, amountOfCredit=5.00000, sumOfIndebtedness=5.00000, durationOfContract=12, typePayment=1, interestRate=40.0, creditLogic=ua.artemenko.bankapp.service.AnnuityCreditLogicImpl@47d9a273
+22:41:14,805  INFO ClassPathXmlApplicationContext:581 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@ee7d9f1: startup date [Wed Oct 12 22:41:14 EEST 2016]; root of context hierarchy
+22:41:14,878  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [config/app-config.xml]
+22:41:15,211  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [config/controller-config.xml]
+22:41:15,329  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [config/view-config.xml]
+22:41:15,443  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [config/model-config.xml]
+22:41:15,569  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [config/dao-config.xml]
+22:41:15,650  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [config/service-config.xml]
+22:41:29,099  INFO CreditDaoImpl:38 - A new entry is added to the database.Loan information: idContract=0, amountOfCredit=2222.00, sumOfIndebtedness=2222.00, durationOfContract=12, typePayment=1, interestRate=40.0, creditLogic=ua.artemenko.bankapp.service.AnnuityCreditLogicImpl@3cebbb30
+22:46:54,650  INFO ClassPathXmlApplicationContext:581 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@ee7d9f1: startup date [Wed Oct 12 22:46:54 EEST 2016]; root of context hierarchy
+22:46:54,729  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [config/app-config.xml]
+22:46:55,050  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [config/controller-config.xml]
+22:46:55,123  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [config/view-config.xml]
+22:46:55,209  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [config/model-config.xml]
+22:46:55,324  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [config/dao-config.xml]
+22:46:55,393  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [config/service-config.xml]
+22:47:15,280  INFO CreditDaoImpl:38 - A new entry is added to the database.Loan information: idContract=0, amountOfCredit=5555.00, sumOfIndebtedness=5555.00, durationOfContract=12, typePayment=2, interestRate=40.0, creditLogic=ua.artemenko.bankapp.service.BalanceDecreaseCreditLogicImpl@3cebbb30
+22:48:32,404  INFO CreditDaoImpl:38 - A new entry is added to the database.Loan information: idContract=0, amountOfCredit=5555.00, sumOfIndebtedness=5555.00, durationOfContract=12, typePayment=1, interestRate=40.0, creditLogic=ua.artemenko.bankapp.service.AnnuityCreditLogicImpl@6253c26
+22:50:41,326  INFO ClassPathXmlApplicationContext:581 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@ee7d9f1: startup date [Wed Oct 12 22:50:41 EEST 2016]; root of context hierarchy
+22:50:41,385  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [config/app-config.xml]
+22:50:41,677  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [config/controller-config.xml]
+22:50:41,737  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [config/view-config.xml]
+22:50:41,827  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [config/model-config.xml]
+22:50:41,915  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [config/dao-config.xml]
+22:50:41,998  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [config/service-config.xml]
+22:50:58,990  INFO CreditDaoImpl:38 - A new entry is added to the database.Loan information: idContract=0, amountOfCredit=2222.00, sumOfIndebtedness=2222.00, durationOfContract=12, typePayment=2, interestRate=40.0, creditLogic=ua.artemenko.bankapp.service.BalanceDecreaseCreditLogicImpl@3cebbb30
+22:51:38,513  INFO ClassPathXmlApplicationContext:581 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@ee7d9f1: startup date [Wed Oct 12 22:51:38 EEST 2016]; root of context hierarchy
+22:51:38,583  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [config/app-config.xml]
+22:51:38,831  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [config/controller-config.xml]
+22:51:38,907  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [config/view-config.xml]
+22:51:38,991  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [config/model-config.xml]
+22:51:39,064  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [config/dao-config.xml]
+22:51:39,134  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [config/service-config.xml]
+22:51:54,116  INFO CreditDaoImpl:38 - A new entry is added to the database.Loan information: idContract=0, amountOfCredit=2222.00, sumOfIndebtedness=2222.00, durationOfContract=12, typePayment=2, interestRate=40.0, creditLogic=ua.artemenko.bankapp.service.BalanceDecreaseCreditLogicImpl@3cebbb30
+22:52:56,118  INFO ClassPathXmlApplicationContext:581 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@ee7d9f1: startup date [Wed Oct 12 22:52:56 EEST 2016]; root of context hierarchy
+22:52:56,183  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [config/app-config.xml]
+22:52:56,478  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [config/controller-config.xml]
+22:52:56,557  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [config/view-config.xml]
+22:52:56,669  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [config/model-config.xml]
+22:52:56,791  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [config/dao-config.xml]
+22:52:56,884  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [config/service-config.xml]
+22:53:25,804  INFO CreditDaoImpl:38 - A new entry is added to the database.Loan information: idContract=0, amountOfCredit=5555.00, sumOfIndebtedness=5555.00, durationOfContract=12, typePayment=2, interestRate=40.0, creditLogic=ua.artemenko.bankapp.service.BalanceDecreaseCreditLogicImpl@3cebbb30
+23:07:49,358  INFO ClassPathXmlApplicationContext:581 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@ee7d9f1: startup date [Wed Oct 12 23:07:49 EEST 2016]; root of context hierarchy
+23:07:49,419  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [config/app-config.xml]
+23:07:49,744  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [config/controller-config.xml]
+23:07:49,918  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [config/view-config.xml]
+23:07:50,020  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [config/model-config.xml]
+23:07:50,150  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [config/dao-config.xml]
+23:07:50,224  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [config/service-config.xml]
+23:07:58,248  INFO CreditDaoImpl:50 - Entry obtained.Information: idContract=5, amountOfCredit=5000.00000, sumOfIndebtedness=4750.00000, durationOfContract=24, typePayment=1, interestRate=40.0, creditLogic=ua.artemenko.bankapp.service.AnnuityCreditLogicImpl@12aba8be
+23:09:58,770  INFO ClassPathXmlApplicationContext:581 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@ee7d9f1: startup date [Wed Oct 12 23:09:58 EEST 2016]; root of context hierarchy
+23:09:58,847  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [config/app-config.xml]
+23:09:59,158  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [config/controller-config.xml]
+23:09:59,235  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [config/view-config.xml]
+23:09:59,363  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [config/model-config.xml]
+23:09:59,454  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [config/dao-config.xml]
+23:09:59,542  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [config/service-config.xml]
+23:10:06,070  INFO CreditDaoImpl:50 - Entry obtained.Information: idContract=5, amountOfCredit=5000.00000, sumOfIndebtedness=4750.00000, durationOfContract=24, typePayment=1, interestRate=40.0, creditLogic=ua.artemenko.bankapp.service.AnnuityCreditLogicImpl@12aba8be
+23:10:11,844  INFO CreditDaoImpl:70 - Entry is updated
+23:11:13,894  INFO ClassPathXmlApplicationContext:581 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@ee7d9f1: startup date [Wed Oct 12 23:11:13 EEST 2016]; root of context hierarchy
+23:11:13,951  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [config/app-config.xml]
+23:11:14,252  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [config/controller-config.xml]
+23:11:14,349  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [config/view-config.xml]
+23:11:14,438  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [config/model-config.xml]
+23:11:14,552  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [config/dao-config.xml]
+23:11:14,624  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [config/service-config.xml]
+23:11:20,573  INFO CreditDaoImpl:50 - Entry obtained.Information: idContract=6, amountOfCredit=20000.00000, sumOfIndebtedness=20000.00000, durationOfContract=24, typePayment=1, interestRate=40.0, creditLogic=ua.artemenko.bankapp.service.AnnuityCreditLogicImpl@12aba8be
+23:12:07,506  INFO CreditDaoImpl:70 - Entry is updated
+23:25:40,232  INFO ClassPathXmlApplicationContext:581 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@ee7d9f1: startup date [Wed Oct 12 23:25:40 EEST 2016]; root of context hierarchy
+23:25:40,291  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [config/app-config.xml]
+23:25:40,616  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [config/controller-config.xml]
+23:25:40,711  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [config/view-config.xml]
+23:25:40,828  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [config/model-config.xml]
+23:25:40,930  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [config/dao-config.xml]
+23:25:41,014  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [config/service-config.xml]
+23:25:49,177  INFO CreditDaoImpl:50 - Entry obtained.Information: idContract=7, amountOfCredit=30000.00000, sumOfIndebtedness=30000.00000, durationOfContract=24, typePayment=2, interestRate=40.0, creditLogic=ua.artemenko.bankapp.service.BalanceDecreaseCreditLogicImpl@12aba8be
+23:39:24,232  INFO ClassPathXmlApplicationContext:581 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@ee7d9f1: startup date [Wed Oct 12 23:39:24 EEST 2016]; root of context hierarchy
+23:39:24,293  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [config/app-config.xml]
+23:39:24,571  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [config/controller-config.xml]
+23:39:24,639  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [config/view-config.xml]
+23:39:24,774  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [config/model-config.xml]
+23:39:24,880  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [config/dao-config.xml]
+23:39:24,961  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [config/service-config.xml]
+23:39:32,436  INFO CreditDaoImpl:50 - Entry obtained.Information: idContract=8, amountOfCredit=20000.00000, sumOfIndebtedness=20000.00000, durationOfContract=24, typePayment=2, interestRate=40.0, creditLogic=ua.artemenko.bankapp.service.BalanceDecreaseCreditLogicImpl@12aba8be
+00:27:51,395  INFO ClassPathXmlApplicationContext:581 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@ee7d9f1: startup date [Thu Oct 13 00:27:51 EEST 2016]; root of context hierarchy
+00:27:51,475  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [config/app-config.xml]
+00:27:51,730  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [config/controller-config.xml]
+00:27:51,827  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [config/view-config.xml]
+00:27:51,933  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [config/model-config.xml]
+00:27:52,006  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [config/dao-config.xml]
+00:27:52,094  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [config/service-config.xml]
+00:28:02,745  INFO CreditDaoImpl:50 - Entry obtained.Information: idContract=7, amountOfCredit=30000.00000, sumOfIndebtedness=30000.00000, durationOfContract=24, typePayment=2, interestRate=40.0, creditLogic=ua.artemenko.bankapp.service.BalanceDecreaseCreditLogicImpl@12aba8be
+01:07:56,901  INFO ClassPathXmlApplicationContext:581 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@ee7d9f1: startup date [Thu Oct 13 01:07:56 EEST 2016]; root of context hierarchy
+01:07:56,968  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [config/app-config.xml]
+01:07:57,252  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [config/controller-config.xml]
+01:07:57,362  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [config/view-config.xml]
+01:07:57,491  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [config/model-config.xml]
+01:07:57,629  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [config/dao-config.xml]
+01:07:57,677  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [config/service-config.xml]
+01:08:09,540  INFO CreditDaoImpl:50 - Entry obtained.Information: idContract=6, amountOfCredit=20000.00000, sumOfIndebtedness=19266.70000, durationOfContract=24, typePayment=1, interestRate=40.0, creditLogic=ua.artemenko.bankapp.service.AnnuityCreditLogicImpl@12aba8be
+01:11:47,316  INFO ClassPathXmlApplicationContext:581 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@ee7d9f1: startup date [Thu Oct 13 01:11:47 EEST 2016]; root of context hierarchy
+01:11:47,398  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [config/app-config.xml]
+01:11:47,669  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [config/controller-config.xml]
+01:11:47,778  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [config/view-config.xml]
+01:11:47,871  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [config/model-config.xml]
+01:11:47,951  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [config/dao-config.xml]
+01:11:47,989  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [config/service-config.xml]
+01:11:53,479  INFO CreditDaoImpl:50 - Entry obtained.Information: idContract=5, amountOfCredit=5000.00000, sumOfIndebtedness=4559.50000, durationOfContract=24, typePayment=1, interestRate=40.0, creditLogic=ua.artemenko.bankapp.service.AnnuityCreditLogicImpl@12aba8be
+01:13:10,831  INFO ClassPathXmlApplicationContext:581 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@6500df86: startup date [Thu Oct 13 01:13:10 EEST 2016]; root of context hierarchy
+01:13:10,925  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [config/app-config.xml]
+01:13:11,281  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [config/controller-config.xml]
+01:13:11,355  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [config/view-config.xml]
+01:13:11,449  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [config/model-config.xml]
+01:13:11,511  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [config/dao-config.xml]
+01:13:11,567  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [config/service-config.xml]
+01:13:18,347  INFO CreditDaoImpl:50 - Entry obtained.Information: idContract=7, amountOfCredit=30000.00000, sumOfIndebtedness=30000.00000, durationOfContract=24, typePayment=2, interestRate=40.0, creditLogic=ua.artemenko.bankapp.service.BalanceDecreaseCreditLogicImpl@6326d182
+01:16:04,028  INFO ClassPathXmlApplicationContext:581 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@ee7d9f1: startup date [Thu Oct 13 01:16:04 EEST 2016]; root of context hierarchy
+01:16:04,111  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [config/app-config.xml]
+01:16:04,469  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [config/controller-config.xml]
+01:16:04,565  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [config/view-config.xml]
+01:16:04,653  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [config/model-config.xml]
+01:16:04,735  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [config/dao-config.xml]
+01:16:04,790  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [config/service-config.xml]
+01:16:15,026  INFO CreditDaoImpl:50 - Entry obtained.Information: idContract=5, amountOfCredit=5000.00000, sumOfIndebtedness=4559.50000, durationOfContract=24, typePayment=1, interestRate=40.0, creditLogic=ua.artemenko.bankapp.service.AnnuityCreditLogicImpl@12aba8be
+01:16:58,151  INFO ClassPathXmlApplicationContext:581 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@6500df86: startup date [Thu Oct 13 01:16:58 EEST 2016]; root of context hierarchy
+01:16:58,224  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [config/app-config.xml]
+01:16:58,584  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [config/controller-config.xml]
+01:16:58,713  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [config/view-config.xml]
+01:16:58,893  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [config/model-config.xml]
+01:16:59,013  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [config/dao-config.xml]
+01:16:59,100  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [config/service-config.xml]
+01:17:04,897  INFO CreditDaoImpl:50 - Entry obtained.Information: idContract=6, amountOfCredit=20000.00000, sumOfIndebtedness=19266.70000, durationOfContract=24, typePayment=1, interestRate=40.0, creditLogic=ua.artemenko.bankapp.service.AnnuityCreditLogicImpl@235f4c10
+01:24:28,873  INFO ClassPathXmlApplicationContext:581 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@ee7d9f1: startup date [Thu Oct 13 01:24:28 EEST 2016]; root of context hierarchy
+01:24:28,936  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [config/app-config.xml]
+01:24:29,213  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [config/controller-config.xml]
+01:24:29,333  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [config/view-config.xml]
+01:24:29,491  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [config/model-config.xml]
+01:24:29,598  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [config/dao-config.xml]
+01:24:29,637  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [config/service-config.xml]
+01:24:36,927  INFO CreditDaoImpl:50 - Entry obtained.Information: idContract=6, amountOfCredit=20000.00000, sumOfIndebtedness=19266.70000, durationOfContract=24, typePayment=1, interestRate=40.0, creditLogic=ua.artemenko.bankapp.service.AnnuityCreditLogicImpl@12aba8be
+01:24:54,516  INFO CreditDaoImpl:70 - Entry is updated
+01:25:50,243  INFO CreditDaoImpl:50 - Entry obtained.Information: idContract=7, amountOfCredit=30000.00000, sumOfIndebtedness=30000.00000, durationOfContract=24, typePayment=2, interestRate=40.0, creditLogic=ua.artemenko.bankapp.service.BalanceDecreaseCreditLogicImpl@71a8adcf
+01:29:54,092  INFO ClassPathXmlApplicationContext:581 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@ee7d9f1: startup date [Thu Oct 13 01:29:54 EEST 2016]; root of context hierarchy
+01:29:54,173  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [config/app-config.xml]
+01:29:54,479  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [config/controller-config.xml]
+01:29:54,585  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [config/view-config.xml]
+01:29:54,672  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [config/model-config.xml]
+01:29:54,754  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [config/dao-config.xml]
+01:29:54,822  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [config/service-config.xml]
+01:30:03,641  INFO CreditDaoImpl:50 - Entry obtained.Information: idContract=8, amountOfCredit=20000.00000, sumOfIndebtedness=20000.00000, durationOfContract=24, typePayment=2, interestRate=40.0, creditLogic=ua.artemenko.bankapp.service.BalanceDecreaseCreditLogicImpl@12aba8be
+01:31:59,920  INFO ClassPathXmlApplicationContext:581 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@ee7d9f1: startup date [Thu Oct 13 01:31:59 EEST 2016]; root of context hierarchy
+01:31:59,978  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [config/app-config.xml]
+01:32:00,267  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [config/controller-config.xml]
+01:32:00,341  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [config/view-config.xml]
+01:32:00,439  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [config/model-config.xml]
+01:32:00,513  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [config/dao-config.xml]
+01:32:00,559  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [config/service-config.xml]
+01:32:07,244  INFO CreditDaoImpl:50 - Entry obtained.Information: idContract=9, amountOfCredit=20000.00000, sumOfIndebtedness=19077.60000, durationOfContract=24, typePayment=2, interestRate=40.0, creditLogic=ua.artemenko.bankapp.service.BalanceDecreaseCreditLogicImpl@12aba8be
+01:33:04,018  INFO ClassPathXmlApplicationContext:581 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@ee7d9f1: startup date [Thu Oct 13 01:33:04 EEST 2016]; root of context hierarchy
+01:33:04,091  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [config/app-config.xml]
+01:33:04,379  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [config/controller-config.xml]
+01:33:04,452  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [config/view-config.xml]
+01:33:04,533  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [config/model-config.xml]
+01:33:04,620  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [config/dao-config.xml]
+01:33:04,691  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [config/service-config.xml]
+01:33:10,607  INFO CreditDaoImpl:50 - Entry obtained.Information: idContract=9, amountOfCredit=20000.00000, sumOfIndebtedness=19077.60000, durationOfContract=24, typePayment=2, interestRate=40.0, creditLogic=ua.artemenko.bankapp.service.BalanceDecreaseCreditLogicImpl@12aba8be
+01:35:02,121  INFO ClassPathXmlApplicationContext:581 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@ee7d9f1: startup date [Thu Oct 13 01:35:02 EEST 2016]; root of context hierarchy
+01:35:02,199  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [config/app-config.xml]
+01:35:02,524  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [config/controller-config.xml]
+01:35:02,600  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [config/view-config.xml]
+01:35:02,681  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [config/model-config.xml]
+01:35:02,756  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [config/dao-config.xml]
+01:35:02,824  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [config/service-config.xml]
+01:35:10,149  INFO CreditDaoImpl:50 - Entry obtained.Information: idContract=9, amountOfCredit=20000.00000, sumOfIndebtedness=19077.60000, durationOfContract=24, typePayment=2, interestRate=40.0, creditLogic=ua.artemenko.bankapp.service.BalanceDecreaseCreditLogicImpl@12aba8be
+01:39:11,902  INFO ClassPathXmlApplicationContext:581 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@ee7d9f1: startup date [Thu Oct 13 01:39:11 EEST 2016]; root of context hierarchy
+01:39:11,968  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [config/app-config.xml]
+01:39:12,265  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [config/controller-config.xml]
+01:39:12,340  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [config/view-config.xml]
+01:39:12,446  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [config/model-config.xml]
+01:39:12,560  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [config/dao-config.xml]
+01:39:12,638  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [config/service-config.xml]
+01:39:26,840  INFO CreditDaoImpl:38 - A new entry is added to the database.Loan information: idContract=0, amountOfCredit=3333.00, sumOfIndebtedness=3333.00, durationOfContract=12, typePayment=2, interestRate=40.0, creditLogic=ua.artemenko.bankapp.service.BalanceDecreaseCreditLogicImpl@3cebbb30
+01:39:31,546  INFO CreditDaoImpl:50 - Entry obtained.Information: idContract=5, amountOfCredit=5000.00000, sumOfIndebtedness=4559.50000, durationOfContract=24, typePayment=1, interestRate=40.0, creditLogic=ua.artemenko.bankapp.service.AnnuityCreditLogicImpl@47d9a273
+01:42:15,369  INFO ClassPathXmlApplicationContext:581 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@ee7d9f1: startup date [Thu Oct 13 01:42:15 EEST 2016]; root of context hierarchy
+01:42:15,432  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [config/app-config.xml]
+01:42:15,733  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [config/controller-config.xml]
+01:42:15,854  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [config/view-config.xml]
+01:42:15,944  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [config/model-config.xml]
+01:42:16,061  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [config/dao-config.xml]
+01:42:16,117  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [config/service-config.xml]
+01:42:22,139  INFO CreditDaoImpl:50 - Entry obtained.Information: idContract=9, amountOfCredit=20000.00000, sumOfIndebtedness=19077.60000, durationOfContract=24, typePayment=2, interestRate=40.0, creditLogic=ua.artemenko.bankapp.service.BalanceDecreaseCreditLogicImpl@12aba8be
+01:43:58,691  INFO ClassPathXmlApplicationContext:581 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@6500df86: startup date [Thu Oct 13 01:43:58 EEST 2016]; root of context hierarchy
+01:43:58,802  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [config/app-config.xml]
+01:43:59,218  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [config/controller-config.xml]
+01:43:59,339  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [config/view-config.xml]
+01:43:59,497  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [config/model-config.xml]
+01:43:59,581  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [config/dao-config.xml]
+01:43:59,677  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [config/service-config.xml]
+01:44:06,143  INFO CreditDaoImpl:50 - Entry obtained.Information: idContract=6, amountOfCredit=20000.00000, sumOfIndebtedness=18544.40000, durationOfContract=24, typePayment=1, interestRate=40.0, creditLogic=ua.artemenko.bankapp.service.AnnuityCreditLogicImpl@6326d182
+01:47:26,382  INFO ClassPathXmlApplicationContext:581 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@ee7d9f1: startup date [Thu Oct 13 01:47:26 EEST 2016]; root of context hierarchy
+01:47:26,456  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [config/app-config.xml]
+01:47:26,843  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [config/controller-config.xml]
+01:47:26,943  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [config/view-config.xml]
+01:47:27,070  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [config/model-config.xml]
+01:47:27,223  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [config/dao-config.xml]
+01:47:27,298  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [config/service-config.xml]
+01:47:37,434  INFO CreditDaoImpl:50 - Entry obtained.Information: idContract=8, amountOfCredit=20000.00000, sumOfIndebtedness=20000.00000, durationOfContract=24, typePayment=2, interestRate=40.0, creditLogic=ua.artemenko.bankapp.service.BalanceDecreaseCreditLogicImpl@12aba8be
+01:47:57,284  INFO CreditDaoImpl:70 - Entry is updated
+01:48:04,137  INFO CreditDaoImpl:50 - Entry obtained.Information: idContract=6, amountOfCredit=20000.00000, sumOfIndebtedness=18544.40000, durationOfContract=24, typePayment=1, interestRate=40.0, creditLogic=ua.artemenko.bankapp.service.AnnuityCreditLogicImpl@71a8adcf
+01:48:28,135  INFO CreditDaoImpl:70 - Entry is updated
+01:48:33,041  INFO CreditDaoImpl:50 - Entry obtained.Information: idContract=3, amountOfCredit=20000.00000, sumOfIndebtedness=16643.00000, durationOfContract=12, typePayment=1, interestRate=40.0, creditLogic=ua.artemenko.bankapp.service.AnnuityCreditLogicImpl@659499f1
+01:48:56,096  INFO CreditDaoImpl:70 - Entry is updated
+01:54:05,443  INFO ClassPathXmlApplicationContext:581 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@6500df86: startup date [Thu Oct 13 01:54:05 EEST 2016]; root of context hierarchy
+01:54:05,519  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [config/app-config.xml]
+01:54:05,880  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [config/controller-config.xml]
+01:54:05,966  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [config/view-config.xml]
+01:54:06,126  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [config/model-config.xml]
+01:54:06,208  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [config/dao-config.xml]
+01:54:06,306  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [config/service-config.xml]
+01:54:23,290  INFO CreditDaoImpl:38 - A new entry is added to the database.Loan information: idContract=0, amountOfCredit=3333.00, sumOfIndebtedness=3333.00, durationOfContract=24, typePayment=2, interestRate=40.0, creditLogic=ua.artemenko.bankapp.service.BalanceDecreaseCreditLogicImpl@4eed46ee
+01:55:12,649  INFO ClassPathXmlApplicationContext:581 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@ee7d9f1: startup date [Thu Oct 13 01:55:12 EEST 2016]; root of context hierarchy
+01:55:12,714  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [config/app-config.xml]
+01:55:13,013  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [config/controller-config.xml]
+01:55:13,137  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [config/view-config.xml]
+01:55:13,291  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [config/model-config.xml]
+01:55:13,431  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [config/dao-config.xml]
+01:55:13,494  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [config/service-config.xml]
+01:55:22,603  INFO ClassPathXmlApplicationContext:581 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@ee7d9f1: startup date [Thu Oct 13 01:55:22 EEST 2016]; root of context hierarchy
+01:55:22,663  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [config/app-config.xml]
+01:55:22,973  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [config/controller-config.xml]
+01:55:23,109  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [config/view-config.xml]
+01:55:23,231  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [config/model-config.xml]
+01:55:23,327  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [config/dao-config.xml]
+01:55:23,401  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [config/service-config.xml]
+01:55:35,042  INFO CreditDaoImpl:50 - Entry obtained.Information: idContract=33, amountOfCredit=5555.00000, sumOfIndebtedness=5555.00000, durationOfContract=12, typePayment=2, interestRate=40.0, creditLogic=ua.artemenko.bankapp.service.BalanceDecreaseCreditLogicImpl@290222c1
+01:56:06,635  INFO CreditDaoImpl:70 - Entry is updated
+01:58:06,348  INFO ClassPathXmlApplicationContext:581 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@ee7d9f1: startup date [Thu Oct 13 01:58:06 EEST 2016]; root of context hierarchy
+01:58:06,429  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [config/app-config.xml]
+01:58:06,714  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [config/controller-config.xml]
+01:58:06,796  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [config/view-config.xml]
+01:58:06,883  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [config/model-config.xml]
+01:58:06,955  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [config/dao-config.xml]
+01:58:07,040  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [config/service-config.xml]
+01:58:21,859  INFO CreditDaoImpl:50 - Entry obtained.Information: idContract=32, amountOfCredit=2222.00000, sumOfIndebtedness=2222.00000, durationOfContract=12, typePayment=1, interestRate=40.0, creditLogic=ua.artemenko.bankapp.service.AnnuityCreditLogicImpl@6253c26
+01:58:36,816  INFO CreditDaoImpl:70 - Entry is updated
+02:25:06,067  INFO ClassPathXmlApplicationContext:581 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@ee7d9f1: startup date [Thu Oct 13 02:25:06 EEST 2016]; root of context hierarchy
+02:25:06,137  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [config/app-config.xml]
+02:25:06,424  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [config/controller-config.xml]
+02:25:06,514  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [config/view-config.xml]
+02:25:06,611  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [config/model-config.xml]
+02:25:06,678  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [config/dao-config.xml]
+02:25:06,718  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [config/service-config.xml]
+02:25:12,310  INFO CreditDaoImpl:50 - Entry obtained.Information: idContract=8, amountOfCredit=20000.00000, sumOfIndebtedness=19166.67000, durationOfContract=24, typePayment=2, interestRate=40.0, creditLogic=ua.artemenko.bankapp.service.BalanceDecreaseCreditLogicImpl@12aba8be
+02:26:09,238  INFO ClassPathXmlApplicationContext:581 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@ee7d9f1: startup date [Thu Oct 13 02:26:09 EEST 2016]; root of context hierarchy
+02:26:09,299  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [config/app-config.xml]
+02:26:09,585  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [config/controller-config.xml]
+02:26:09,652  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [config/view-config.xml]
+02:26:09,752  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [config/model-config.xml]
+02:26:09,883  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [config/dao-config.xml]
+02:26:09,955  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [config/service-config.xml]
+02:26:17,736  INFO CreditDaoImpl:50 - Entry obtained.Information: idContract=8, amountOfCredit=20000.00000, sumOfIndebtedness=19166.67000, durationOfContract=24, typePayment=2, interestRate=40.0, creditLogic=ua.artemenko.bankapp.service.BalanceDecreaseCreditLogicImpl@12aba8be
+02:26:59,565  INFO CreditDaoImpl:70 - Entry is updated
+02:28:47,989  INFO ClassPathXmlApplicationContext:581 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@ee7d9f1: startup date [Thu Oct 13 02:28:47 EEST 2016]; root of context hierarchy
+02:28:48,051  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [config/app-config.xml]
+02:28:48,365  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [config/controller-config.xml]
+02:28:48,519  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [config/view-config.xml]
+02:28:48,670  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [config/model-config.xml]
+02:28:48,768  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [config/dao-config.xml]
+02:28:48,838  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [config/service-config.xml]
+02:34:49,302  INFO ClassPathXmlApplicationContext:581 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@ee7d9f1: startup date [Thu Oct 13 02:34:49 EEST 2016]; root of context hierarchy
+02:34:49,367  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [config/app-config.xml]
+02:34:49,666  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [config/controller-config.xml]
+02:34:49,762  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [config/view-config.xml]
+02:34:49,858  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [config/model-config.xml]
+02:34:49,942  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [config/dao-config.xml]
+02:34:50,018  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [config/service-config.xml]
+02:35:16,734  INFO CreditDaoImpl:38 - A new entry is added to the database.Loan information: idContract=0, amountOfCredit=3333.00, sumOfIndebtedness=3333.00, durationOfContract=33, typePayment=2, interestRate=40.0, creditLogic=ua.artemenko.bankapp.service.BalanceDecreaseCreditLogicImpl@3cebbb30
+02:37:14,212  INFO ClassPathXmlApplicationContext:581 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@ee7d9f1: startup date [Thu Oct 13 02:37:14 EEST 2016]; root of context hierarchy
+02:37:14,284  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [config/app-config.xml]
+02:37:14,631  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [config/controller-config.xml]
+02:37:14,783  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [config/view-config.xml]
+02:37:14,917  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [config/model-config.xml]
+02:37:15,049  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [config/dao-config.xml]
+02:37:15,131  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [config/service-config.xml]
+02:37:50,681  INFO CreditDaoImpl:38 - A new entry is added to the database.Loan information: idContract=0, amountOfCredit=3333.00, sumOfIndebtedness=3333.00, durationOfContract=22, typePayment=2, interestRate=40.0, creditLogic=ua.artemenko.bankapp.service.BalanceDecreaseCreditLogicImpl@12aba8be
+02:38:03,391  INFO CreditDaoImpl:50 - Entry obtained.Information: idContract=5, amountOfCredit=5000.00000, sumOfIndebtedness=4559.50000, durationOfContract=24, typePayment=1, interestRate=40.0, creditLogic=ua.artemenko.bankapp.service.AnnuityCreditLogicImpl@4b8ee4de
+02:38:30,349  INFO CreditDaoImpl:70 - Entry is updated
+02:42:40,548  INFO ClassPathXmlApplicationContext:581 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@ee7d9f1: startup date [Thu Oct 13 02:42:40 EEST 2016]; root of context hierarchy
+02:42:40,617  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [config/app-config.xml]
+02:42:40,874  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [config/controller-config.xml]
+02:42:40,951  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [config/view-config.xml]
+02:42:41,039  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [config/model-config.xml]
+02:42:41,111  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [config/dao-config.xml]
+02:42:41,159  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [config/service-config.xml]
+02:43:16,999  INFO CreditDaoImpl:38 - A new entry is added to the database.Loan information: idContract=0, amountOfCredit=22222.00, sumOfIndebtedness=22222.00, durationOfContract=22, typePayment=2, interestRate=40.0, creditLogic=ua.artemenko.bankapp.service.BalanceDecreaseCreditLogicImpl@12aba8be
+02:43:27,717  INFO CreditDaoImpl:50 - Entry obtained.Information: idContract=9, amountOfCredit=20000.00000, sumOfIndebtedness=19077.60000, durationOfContract=24, typePayment=2, interestRate=40.0, creditLogic=ua.artemenko.bankapp.service.BalanceDecreaseCreditLogicImpl@4b8ee4de
+02:43:46,506  INFO CreditDaoImpl:70 - Entry is updated

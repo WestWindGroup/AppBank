@@ -2,7 +2,9 @@ package ua.artemenko.bankapp.service;
 
 
 import java.math.BigDecimal;
+import java.util.InputMismatchException;
 import java.util.Scanner;
+
 
 public class InputScreen {
 
@@ -26,6 +28,29 @@ public class InputScreen {
 
     public BigDecimal inputBigDecimal() {
         BigDecimal result = scanner.nextBigDecimal();
+        return result;
+    }
+    public BigDecimal inputString() {
+        int countPoint = 0;
+        String str = scanner.nextLine();
+        char[] chArray = str.toCharArray();
+        StringBuilder strBuild = new StringBuilder();
+        for (int i = 0; i < chArray.length; i++) {
+            if(Character.isDigit(chArray[i])){
+                strBuild.append(chArray[i]);
+            }else if ((chArray[i] == ',') || (chArray[i] == '.')){
+                if(countPoint > 0){
+                    throw new InputMismatchException();
+                }else{
+                    chArray[i] = '.';
+                    strBuild.append(chArray[i]);
+                    countPoint ++;
+                }
+            }else{
+                throw new InputMismatchException();
+            }
+        }
+        BigDecimal result = new BigDecimal(strBuild.toString());
         return result;
     }
 

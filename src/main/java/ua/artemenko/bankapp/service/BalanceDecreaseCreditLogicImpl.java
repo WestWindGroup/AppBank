@@ -10,7 +10,6 @@ public class BalanceDecreaseCreditLogicImpl extends CreditLogic {
     @Override
     public List<String> calculateListPayments(Credit credit) {
         BigDecimal debt = credit.getAmountOfCredit();
-        BigDecimal payment = calculateMinPayment(credit). setScale(2, BigDecimal.ROUND_HALF_EVEN);
         BigDecimal convertDuration = new BigDecimal(credit.getDurationOfContract());
         BigDecimal bodyPay = credit.getAmountOfCredit().divide(convertDuration,BigDecimal.ROUND_HALF_EVEN);
         List<String> listPayments = new ArrayList<>();
@@ -19,6 +18,7 @@ public class BalanceDecreaseCreditLogicImpl extends CreditLogic {
         for (int i = 1; i <= credit.getDurationOfContract(); i++) {
             calendar.add(Calendar.MONTH, 1);
             BigDecimal ratePay = ratePayment(credit.getInterestRate(),debt);
+            BigDecimal payment = ratePay.add(bodyPay);
             debt = debt.subtract(bodyPay);
             paymentToString = formatString(ratePay, bodyPay, payment);
             listPayments.add(paymentToString);

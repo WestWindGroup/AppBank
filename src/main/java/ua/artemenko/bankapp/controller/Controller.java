@@ -1,6 +1,7 @@
 package ua.artemenko.bankapp.controller;
 
 
+import ua.artemenko.bankapp.service.InputScreen;
 import ua.artemenko.bankapp.view.Messages;
 
 public class Controller implements Observer {
@@ -42,6 +43,8 @@ public class Controller implements Observer {
     public void handleEvent(String nameScreen) {
         if(!nameScreen.equals(messages.getExit())){
             startScreen(nameScreen);
+        }else{
+            InputScreen.getScanner().close();
         }
     }
 
@@ -97,4 +100,5 @@ public class Controller implements Observer {
     public void setMessages(Messages messages) {
         this.messages = messages;
     }
+
 }

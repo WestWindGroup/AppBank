@@ -2,6 +2,7 @@ package ua.artemenko.bankapp.view;
 
 import org.springframework.context.MessageSource;
 
+import java.math.BigDecimal;
 import java.util.Locale;
 
 public class Messages {
@@ -24,12 +25,25 @@ public class Messages {
     private String create;
     private String credits_null;
     private String pay;
+    private String your_id;
+    private String to;
     private MessageSource messageSource;
     private Locale locale;
 
 
     public void printString(String ob) {
+        locale = Locale.getDefault();
         System.out.println(messageSource.getMessage(ob, null, locale));
+    }
+    public void printString(String ob, BigDecimal one, BigDecimal two) {
+        locale = Locale.getDefault();
+        System.out.println(messageSource.getMessage(ob, new String[] {one.toString(), two.toString()}, locale));
+    }
+
+    public void printString(String ob, int one, int two) {
+        locale = Locale.getDefault();
+        System.out.println(messageSource.getMessage(ob,
+                new String[] {String.valueOf(one), String.valueOf(two).toString()}, locale));
     }
 
     public MessageSource getMessageSource() {
@@ -198,5 +212,21 @@ public class Messages {
 
     public void setPay(String pay) {
         this.pay = pay;
+    }
+
+    public String getYour_id() {
+        return your_id;
+    }
+
+    public void setYour_id(String your_id) {
+        this.your_id = your_id;
+    }
+
+    public String getTo() {
+        return to;
+    }
+
+    public void setTo(String to) {
+        this.to = to;
     }
 }
