@@ -94,19 +94,19 @@
           p:min_payment="min_payment" p:input_English="input_English" p:input_Russian="input_Russian"
           p:input_Ukrainian="input_Ukrainian"
           p:input_id="input_id" p:input_number_month="input_number_month" p:input_sum="input_sum"
-          p:input_type="input_type" p:to="to"
+          p:input_type="input_type" p:to="to" p:loan_repaid="loan_repaid"
           p:inter_sum_payment="inter_sum_payment" p:pay="pay" p:your_id="your_id"
-          p:messageSource-ref="messageSource" p:locale-ref="locale"/>
+          p:messageSource-ref="messageSource">
+        <property name="locale" ref="locale"/>
+    </bean>
+
 
     <bean id="locale" class="java.util.Locale">
         <constructor-arg name="language" value="uk"/>
+        <constructor-arg name="country" value="UA"/>
     </bean>
 
     <bean id="request" class="ua.artemenko.bankapp.view.Request" scope="prototype"/>
-
-    <bean id="inputScreen" class="ua.artemenko.bankapp.service.InputScreen"
-          init-method="initInputScreen">
-    </bean>
 
 
 </beans>

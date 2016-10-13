@@ -14,13 +14,15 @@ public class LanguageScreenController implements ScreenController,ObservedLangua
     private Observer observer;
     private WorkScreen workScreen;
     private String nameScreenForExit;
+    private Locale locale;
 
     public LanguageScreenController() {
     }
 
     @Override
-    public void eventHandler(String event) {
+    public boolean eventHandler(String event) {
         inputInWordScreen();
+        return true;
     }
 
     private int inputInWordScreen() {
@@ -43,16 +45,21 @@ public class LanguageScreenController implements ScreenController,ObservedLangua
         switch (num) {
             case 1:
                 Locale.setDefault(new Locale("en", "EN"));
+                messages.setLocale(Locale.getDefault());
                 alertChangeLanguage();
                 alertObserver(nameScreenForExit);
                 break;
             case 2:
                 Locale.setDefault(new Locale("ru", "RU"));
+                messages.setLocale(Locale.getDefault());
+                locale = Locale.getDefault();
                 alertChangeLanguage();
                 alertObserver(nameScreenForExit);
                 break;
             case 3:
                 Locale.setDefault(new Locale("uk", "UA"));
+                messages.setLocale(Locale.getDefault());
+                locale = Locale.getDefault();
                 alertChangeLanguage();
                 alertObserver(nameScreenForExit);
                 break;
@@ -74,6 +81,14 @@ public class LanguageScreenController implements ScreenController,ObservedLangua
     @Override
     public void alertChangeLanguage() {
         observer.handChangeLanguage();
+    }
+
+    public Locale getLocale() {
+        return locale;
+    }
+
+    public void setLocale(Locale locale) {
+        this.locale = locale;
     }
 
     public Messages getMessages() {

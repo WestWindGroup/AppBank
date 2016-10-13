@@ -1,13 +1,11 @@
 package ua.artemenko.bankapp.controller;
 
-import ua.artemenko.bankapp.model.Credit;
 import ua.artemenko.bankapp.service.InputScreen;
 import ua.artemenko.bankapp.view.MenuItem;
 import ua.artemenko.bankapp.view.Messages;
 import ua.artemenko.bankapp.view.WorkScreen;
 
 import java.util.InputMismatchException;
-import java.util.List;
 
 public class MenuScreenController implements ScreenController {
 
@@ -26,11 +24,12 @@ public class MenuScreenController implements ScreenController {
     }
 
     @Override
-    public void eventHandler(String event) {
+    public boolean eventHandler(String event) {
         int size = workScreen.getMenuItemList().size();
         int num = inputNumMenu(size);
         String nameScreen = nameItemInListWorkScreen(num);
         alertObserver(nameScreen);
+        return true;
     }
 
     private String nameItemInListWorkScreen(int num) {

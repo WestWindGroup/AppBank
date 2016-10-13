@@ -25,7 +25,7 @@ public class NewCreditScreenController implements ScreenController {
     private String nameScreenForExit;
 
     @Override
-    public void eventHandler(String event) {
+    public boolean eventHandler(String event) {
         if(event.equals(messages.getInput_sum())){
             inputSumHandler();
         }else if(event.equals(messages.getInput_number_month())){
@@ -35,7 +35,7 @@ public class NewCreditScreenController implements ScreenController {
         }else if(event.equals(messages.getNew_credit())){
             newCreditHandler();
         }
-
+        return true;
     }
 
     private void inputSumHandler() {

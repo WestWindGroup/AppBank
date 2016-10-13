@@ -21,19 +21,18 @@ public class PaymentLoanScreenController implements ScreenController {
     private String nameScreenForExit;
 
     @Override
-    public void eventHandler(String event) {
+    public boolean eventHandler(String event) {
         if(event.equals(messages.getInput_id())){
             serviceInputId();
+            return checkID();
         }else if(event.equals(messages.getInter_sum_payment())){
             serviceInputSumPayment();
         } else if (event.equals(messages.getPayment_loan())) {
             paymentLoan();
         }
+        return true;
     }
 
-    private void alertExit(){
-        alertObserver(nameScreenForExit);
-    }
 
     private void paymentLoan() {
         int sizeList = workScreen.getMenuItemList().size();
@@ -41,9 +40,9 @@ public class PaymentLoanScreenController implements ScreenController {
         String nameScreen = nameItemInListWorkScreen(num);
         if (nameScreen.equals(messages.getPay())) {
             serviceImp.updateCredit(credit);
-            alertExit();
+            alertObserver(nameScreenForExit);
         } else if (nameScreen.equals(messages.getExit()))
-            alertExit();
+            alertObserver(nameScreenForExit);
     }
 
     private String nameItemInListWorkScreen(int num) {
@@ -56,15 +55,26 @@ public class PaymentLoanScreenController implements ScreenController {
         return result;
     }
 
+    private boolean checkID() {
+        if(credit.getSumOfIndebtedness().signum() <= 0){
+            messages.printString(messages.getLoan_repaid());
+            alertObserver(nameScreenForExit);
+            return false;
+        }else {
+            return true;
+        }
+    }
+
     private void serviceInputSumPayment() {
         BigDecimal minPayment = credit.getCreditLogic().calculateMinPayment(credit);
         BigDecimal rateInPayment = credit.getCreditLogic().returnRatePaymentOfCredit(credit);
         BigDecimal maxPayment = credit.getSumOfIndebtedness().add(rateInPayment).setScale(2,BigDecimal.ROUND_HALF_UP);
         messages.printString(messages.getTo(),minPayment,maxPayment);
-        BigDecimal payment = inputInRequest(minPayment,credit.getSumOfIndebtedness());
+        BigDecimal payment = inputInRequest(minPayment,maxPayment);
 
         BigDecimal bodyPayment = payment.subtract(rateInPayment);
         credit.setSumOfIndebtedness(credit.getSumOfIndebtedness().subtract(bodyPayment));
+
     }
 
     private void serviceInputId() {

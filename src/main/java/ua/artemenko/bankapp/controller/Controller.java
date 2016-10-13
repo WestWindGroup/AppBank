@@ -1,7 +1,6 @@
 package ua.artemenko.bankapp.controller;
 
 
-import ua.artemenko.bankapp.service.InputScreen;
 import ua.artemenko.bankapp.view.Messages;
 
 public class Controller implements Observer {
@@ -21,18 +20,18 @@ public class Controller implements Observer {
     }
 
     @Override
-    public void handleEvent(String handScreen,String event) {
+    public boolean handleEvent(String handScreen,String event) {
 
         if(handScreen.equals(messages.getMenu())){
-            menuScreenController.eventHandler(event);
+            return menuScreenController.eventHandler(event);
         }else if(handScreen.equals(messages.getNew_credit())){
-            newCreditScreenController.eventHandler(event);
+            return newCreditScreenController.eventHandler(event);
         }else if(handScreen.equals(messages.getPayment_loan())){
-            paymentLoanScreenController.eventHandler(event);
+            return paymentLoanScreenController.eventHandler(event);
         }else if(handScreen.equals(messages.getLanguage_selection())){
-            languageScreenController.eventHandler(event);
+            return languageScreenController.eventHandler(event);
         }
-
+        return true;
     }
 
     public void startScreen(String nameScreen) {
@@ -41,10 +40,8 @@ public class Controller implements Observer {
 
     @Override
     public void handleEvent(String nameScreen) {
-        if(!nameScreen.equals(messages.getExit())){
+        if(!nameScreen.equals(messages.getExit())) {
             startScreen(nameScreen);
-        }else{
-            InputScreen.getScanner().close();
         }
     }
 

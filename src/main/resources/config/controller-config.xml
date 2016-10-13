@@ -24,7 +24,7 @@
     </bean>
 
     <bean id="viewController" class="ua.artemenko.bankapp.controller.ViewController" p:observer-ref="controller"
-          p:endWork="false" p:locale-ref="locale" p:messages-ref="messages">
+          p:showScreen="true" p:locale-ref="locale" p:messages-ref="messages">
         <constructor-arg name="workScreenMap">
             <map>
                 <entry key="menu" value-ref="menuWorkScreen"/>
@@ -39,7 +39,7 @@
 
     <bean id="controllerLanguageScreen" class="ua.artemenko.bankapp.controller.LanguageScreenController"
           p:messages-ref="messages" p:inputScreen-ref="inputScreen" p:nameScreenForExit="menu" p:observer-ref="controller"
-          p:workScreen-ref="languageScreen">
+          p:workScreen-ref="languageScreen" p:locale-ref="locale">
 
     </bean>
 
@@ -62,4 +62,10 @@
           p:messages-ref="messages" p:inputScreen-ref="inputScreen" p:credit-ref="credit" p:serviceImp-ref="creditService">
 
     </bean>
+
+
+    <bean id="inputScreen" class="ua.artemenko.bankapp.service.InputScreen" scope="prototype"
+          init-method="initInputScreen">
+    </bean>
+
 </beans>

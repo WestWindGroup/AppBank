@@ -8,12 +8,12 @@ import java.util.*;
 
 public class ViewController implements ObservedView {
 
-    private boolean endWork;
     private Observer observer;
     private WorkScreen activeScreen;
     private Map<String, WorkScreen> workScreenMap;
     private Locale locale;
     private Messages messages;
+    private boolean showScreen;
 
     public ViewController() {
     }
@@ -31,9 +31,11 @@ public class ViewController implements ObservedView {
     private void activationScreen() {
         activeScreen.showHead();
         checkRequest();
-        activeScreen.showScreen();
-        alertObserver(activeScreen.getHead().getKey(),
-                        activeScreen.getHead().getKey());
+        if (showScreen) {
+            activeScreen.showScreen();
+            alertObserver(activeScreen.getHead().getKey(),
+                    activeScreen.getHead().getKey());
+        }
     }
 
 
@@ -45,8 +47,12 @@ public class ViewController implements ObservedView {
 
     private void startRequestList() {
         for (Request request : activeScreen.getRequestList()) {
-            activeScreen.showRequest(request.getRequest());
-            alertObserver(activeScreen.getHead().getKey(),request.getKey());
+            if (showScreen) {
+                activeScreen.showRequest(request.getRequest());
+                showScreen = alertObserver(activeScreen.getHead().getKey(), request.getKey());
+            } else {
+                break;
+            }
         }
     }
 
@@ -59,17 +65,10 @@ public class ViewController implements ObservedView {
     }
 
     @Override
-    public void alertObserver(String controller,String event) {
-        observer.handleEvent(controller,event);
+    public boolean alertObserver(String controller, String event) {
+        return observer.handleEvent(controller, event);
     }
 
-    public boolean isEndWork() {
-        return endWork;
-    }
-
-    public void setEndWork(boolean endWork) {
-        this.endWork = endWork;
-    }
 
     public Observer getObserver() {
         return observer;
@@ -109,6 +108,14 @@ public class ViewController implements ObservedView {
 
     public void setMessages(Messages messages) {
         this.messages = messages;
+    }
+
+    public boolean isShowScreen() {
+        return showScreen;
+    }
+
+    public void setShowScreen(boolean showScreen) {
+        this.showScreen = showScreen;
     }
 }
 
